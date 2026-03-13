@@ -1,0 +1,42 @@
+<div class="wrapper">
+<div class="container mt-4">
+    <h1>Movie Details</h1>
+    @if (movieapiService.movie(); as movieData) {
+        <div class="card mx-auto movie-details-card">
+        <div class="row g-0">
+        <div class="col-md-4 text-cneter">
+        <img src="{{ movieData.Poster }}" class="img-fluid rounded-start" alt="{{ movieData.Title }} poster" class="img-fluid rounded-start poster-details">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+            <h5 class="card-title"> {{ movieData.Title }}</h5>
+            <p class="card-text"><strong>Year:</strong> {{ movieData.Year }}</p>
+            <p class="card-text"><strong>Director:</strong> {{ movieData.Director }}</p>
+            <p class="card-text"><strong>Plot:</strong> {{ movieData.Plot }}</p>
+            <p class="card-text" style="color: rgb(235, 212, 4); text-decoration: underline; font-weight: bolder;">Ratings:</p>
+            @for (rating of movieData.Ratings; track rating)
+            {
+                <p>{{rating.Source}}: {{rating.Value}}</p>
+            }
+            <button class="btn btn-secondary" routerLink="/">Search Another Movie</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    } @else {
+        <div>
+            <h3 style="color: black;">.. Movie not found.</h3>
+        </div>
+        
+    }
+</div>
+</div>
+
+    
+
+
+
+
+
+
+

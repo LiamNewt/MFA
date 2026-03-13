@@ -1,0 +1,22 @@
+button{
+    background-color: rgb(203, 0, 0);
+    border: white solid 1px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 30px;
+}
+button:hover{
+    background-color: white;
+    color: red;
+    border: red solid 1px;
+}
+h2,label{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+input{
+    border: red solid 2px;
+}
+

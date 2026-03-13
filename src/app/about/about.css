@@ -1,0 +1,22 @@
+.card{
+    min-height: 200px;
+    background: linear-gradient(135deg, #0b132b 0%, #1c2541 50%, #3a506b 100%);
+    border: white solid 2px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 25px rgba(191, 1, 1, 0.242);
+    color: white;
+    padding: 10px;
+    width: 800px;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+.card-header{
+
+    color: white;
+}
+.wrapper{
+    height: 800px;
+    background: linear-gradient(135deg,#0f0f0f,#2c2323, rgb(131, 0, 0));
+    padding: 20px;
+}

@@ -1,0 +1,19 @@
+<div class="container">
+<div class="row justify-content-center">
+    <div class="col-sm-4">
+        <h2 class="d-flex flex-column align-items-center mt-4">Search Movie</h2>
+        <form (ngSubmit)="add()">
+            <div class="mb-3">
+                <label form="movieName" class="form-label">Movie Name</label>
+                <input type="text" class="form-control" id="movieName" [(ngModel)]="moviename" name="movieName">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        @if (searched && movies.movies().length === 0) {
+  <div class="alert alert-danger mt-3 text-center">
+    No movies found.
+  </div>
+}
+</div>
+</div>
+</div>

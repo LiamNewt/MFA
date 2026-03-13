@@ -1,0 +1,17 @@
+<main class="main">
+  <div>
+    <h1>{{ title() }}</h1>
+  </div>
+</main>
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+  <ul class="nav-item">
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a> |
+  <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About</a>
+  </ul>
+  </div>
+</nav>
+
+<router-outlet/>
+
+

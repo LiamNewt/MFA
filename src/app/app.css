@@ -1,0 +1,20 @@
+main{
+    background-color: rgb(186, 0, 0);
+}
+h1, p{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;
+}
+nav{
+    padding-top: 20px;
+}
+nav a{
+    color: white;;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 10px;
+}
+nav a:hover, nav a.active{
+    color: red;
+}
+
